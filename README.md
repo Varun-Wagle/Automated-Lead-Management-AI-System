@@ -21,23 +21,23 @@ The system handles:
 
 ## 🧩 Workflow Overview
 ### ✅ Workflow 1 — Lead Capture API
-• Accepts incoming leads via Webhook POST API
-• Validates payload
-• Stores clean data into Leads Sheet
+• Accepts incoming leads via Webhook POST API<br>
+• Validates payload<br>
+• Stores clean data into Leads Sheet<br>
 
 ### ✅ Workflow 2 — Lead Scoring (AI + Rules)
-• Applies scoring rules:
-  - Budget tier
-  - Source reliability
-  - Service intent
-  - Message seriousness
-• Sends structured prompt to Groq
-• Combines rule score + AI score
-• Calculates:
-  - leadScore (0-100)
-  - priority (HIGH/MEDIUM/LOW)
-  - follow-up schedule
-• Updates database
+• Applies scoring rules:<br>
+  - Budget tier<br>
+  - Source reliability<br>
+  - Service intent<br>
+  - Message seriousness<br>
+• Sends structured prompt to Groq<br>
+• Combines rule score + AI score<br>
+• Calculates:<br>
+  - leadScore (0-100)<br>
+  - priority (HIGH/MEDIUM/LOW)<br>
+  - follow-up schedule<br>
+• Updates database<br>
 
 ### ✅ Workflow 3 — Instant Auto-Reply
 • Generates personalized response email (AI or template)
@@ -92,6 +92,4 @@ Varun Wagle
 AI Automation Developer | n8n Specialist | Prompt Engineer
 
 ## 📬 Contact
-[LinkedIn](https://www.linkedin.com/in/varunwagle/)
-[Instagram](https://www.instagram.com/varun.wagle/)
-[WhatsApp](https://wa.me/+91-9156095415)
+[LinkedIn](https://www.linkedin.com/in/varunwagle/) | [Instagram](https://www.instagram.com/varun.wagle/) | [WhatsApp](https://wa.me/9156095415)
