@@ -40,33 +40,33 @@ The system handles:
 • Updates database<br>
 
 ### ✅ Workflow 3 — Instant Auto-Reply
-• Generates personalized response email (AI or template)
-• Sends immediately via Gmail
-• Logs message history
+• Generates personalized response email (AI or template)<br>
+• Sends immediately via Gmail<br>
+• Logs message history<br>
 
 ### ✅ Workflow 4 — Follow-Up Scheduler
-• Automated outreach:
-  • 1-day follow-up
-  • 3-day follow-up
-  • 7-day follow-up
-  • Skips if:
-    - Lead replied
-    - Lead closed
-    - Follow-up already sent
+• Automated outreach:<br>
+  • 1-day follow-up<br>
+  • 3-day follow-up<br>
+  • 7-day follow-up<br>
+  • Skips if:<br>
+    - Lead replied<br>
+    - Lead closed<br>
+    - Follow-up already sent<br>
     
 ### ✅ Workflow 5 — High Priority Alerts
-• Triggers for leads marked HIGH priority
-• Sends alert email to founder/sales team
-• Adds record to “Hot Leads” sheet
-• Marks alerts as completed to prevent duplicates
+• Triggers for leads marked HIGH priority<br>
+• Sends alert email to founder/sales team<br>
+• Adds record to “Hot Leads” sheet<br>
+• Marks alerts as completed to prevent duplicates<br>
 
 ### ✅ Workflow 6 — Weekly AI Summary Report
-• Every Monday:
-  - Weekly new lead count
-  - HIGH/MEDIUM/LOW breakdown
-  - Follow-up statistics
-  - Auto-reply stats
-• Report delivered via email to sales/admin teams.
+• Every Monday:<br>
+  - Weekly new lead count<br>
+  - HIGH/MEDIUM/LOW breakdown<br>
+  - Follow-up statistics<br>
+  - Auto-reply stats<br>
+• Report delivered via email to sales/admin teams.<br>
 
 ## 📊 System Architecture
 POST API (Webhook)
@@ -76,19 +76,19 @@ Google Sheets <←→ n8n Orchestration Engine ←→ Groq AI
  Gmail API   +  Scheduler Triggers
 
 ## 🎯 Project Goals
-✅ Build job-ready automation skills
-✅ Implement real-world AI workflows
-✅ Integrate OAuth APIs
-✅ Practice model orchestration logic
-✅ Create professional portfolio artifacts
+✅ Build job-ready automation skills<br>
+✅ Implement real-world AI workflows<br>
+✅ Integrate OAuth APIs<br>
+✅ Practice model orchestration logic<br>
+✅ Create professional portfolio artifacts<br>
 
 ## ✅ Outcome
-✔ Fully automated AI lead processing system
-✔ Handles hundreds of leads without manual work
-✔ Demonstrates end-to-end system design ability
+✔ Fully automated AI lead processing system<br>
+✔ Handles hundreds of leads without manual work<br>
+✔ Demonstrates end-to-end system design ability<br>
 
 ## 👨‍💻 Author
-Varun Wagle
+Varun Wagle<br>
 AI Automation Developer | n8n Specialist | Prompt Engineer
 
 ## 📬 Contact
