@@ -69,7 +69,7 @@ The system handles:
 • Report delivered via email to sales/admin teams.<br>
 
 ## 📊 System Architecture
-![System Architecture](./diagrams/system-architecture.png)
+![System Architecture](./diagram/system-architecture.png)
 
 ## 🎯 Project Goals
 ✅ Build job-ready automation skills<br>
