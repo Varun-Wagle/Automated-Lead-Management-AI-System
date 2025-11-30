@@ -170,3 +170,8 @@ AI Automation Developer | Workflow Engineer | LLM Integrator<br>
 
 ## 💬 Contact
 Reach out on [LinkedIn](https://www.linkedin.com/in/varunwagle/) for collaborations or freelance AI automation projects.
+
+## ⚠️ Security & Privacy
+
+This repo contains only documentation and diagrams.<br>
+No workflow exports, secrets, or credentials are publicly stored.
