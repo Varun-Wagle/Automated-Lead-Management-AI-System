@@ -50,6 +50,7 @@ Webhook API captures new inbound leads from:
 
 Validation & normalization occurs before storing into the **Google Sheets lead database**.
 
+![Workflow 1](./diagram/Workflow 1 - Lead Capture API.png)
 ---
 
 ---
@@ -88,6 +89,8 @@ The full lead profile is sent to Groq’s LLaMA-3.3 model to generate:
 }
 ```
 
+![Workflow 2](./diagram/Workflow 2 - Lead Scoring.png)
+
 ### ✅ Workflow 3 — Instant Auto-Reply
 
 Immediately after scoring:<br>
@@ -96,8 +99,10 @@ Immediately after scoring:<br>
 • Gmail API dispatches to the prospect<br>
 • Subject + content logged inside the CRM<br>
 <br>
+![Workflow 3](./diagram/Workflow 3 - Instant Auto-Reply.png)
+
 ### ✅ Workflow 4 — Follow-Up Automation
-<br>
+
 Scheduled campaigns trigger:<br>
 
 | Stage |	Timing |
@@ -112,6 +117,8 @@ Emails are only sent if:<br>
 ✅ Lead is not marked closed<br>
 ✅ Follow-up step hasn’t already been executed<br>
 
+![Workflow 4](./diagram/Workflow 4 - Follow-Up Sequence.png)
+
 ### ✅ Workflow 5 — High-Priority Alerts
 
 When:
@@ -125,6 +132,8 @@ The system instantly:<br>
 • Adds record to Hot Leads List<br>
 • Locks lead to prevent duplicate alerts<br>
 
+![Workflow 5](./diagram/Workflow 5 - High Priority Alerts.png)
+
 ### ✅ Workflow 6 — Weekly Analytics Summary
 
 Every Monday:<br>
@@ -135,6 +144,8 @@ Every Monday:<br>
 • Hot-lead alert counts<br>
 <br>
 All statistics are emailed as a business performance report.<br>
+
+![Workflow 6](./diagram/Workflow 6 - Weekly Summary Reports.png)
 
 ## 🛠️ Key Engineering Capabilities Demonstrated
 
