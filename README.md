@@ -99,13 +99,13 @@ Immediately after scoring:<br>
 ### ✅ Workflow 4 — Follow-Up Automation
 <br>
 Scheduled campaigns trigger:<br>
-<br>
+
 | Stage |	Timing |
 |-------|-------|
 | Follow-Up 1 |	+1 Day |
 | Follow-Up 2 |	+3 Days |
 | Follow-Up 3 |	+7 Days |
-<br>
+
 Emails are only sent if:<br>
 <br>
 ✅ Lead has not replied<br>
