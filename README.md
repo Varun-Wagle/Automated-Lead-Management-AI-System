@@ -69,11 +69,7 @@ The system handles:
 • Report delivered via email to sales/admin teams.<br>
 
 ## 📊 System Architecture
-POST API (Webhook)<br>
-       ↓<br>
-Google Sheets <←→ n8n Orchestration Engine ←→ Groq AI<br>
-       ↓<br>
- Gmail API   +  Scheduler Triggers<br>
+![System Architecture](./diagrams/system-architecture.png)
 
 ## 🎯 Project Goals
 ✅ Build job-ready automation skills<br>
