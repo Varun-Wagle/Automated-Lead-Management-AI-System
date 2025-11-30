@@ -90,83 +90,83 @@ The full lead profile is sent to Groq’s LLaMA-3.3 model to generate:
 
 ### ✅ Workflow 3 — Instant Auto-Reply
 
-Immediately after scoring:
-
-• Personalized email reply is generated
-• Gmail API dispatches to the prospect
-• Subject + content logged inside the CRM
-
+Immediately after scoring:<br>
+<br>
+• Personalized email reply is generated<br>
+• Gmail API dispatches to the prospect<br>
+• Subject + content logged inside the CRM<br>
+<br>
 ### ✅ Workflow 4 — Follow-Up Automation
-
-Scheduled campaigns trigger:
-
+<br>
+Scheduled campaigns trigger:<br>
+<br>
 | Stage |	Timing |
 |-------|-------|
 | Follow-Up 1 |	+1 Day |
 | Follow-Up 2 |	+3 Days |
 | Follow-Up 3 |	+7 Days |
-
-Emails are only sent if:
-
-✅ Lead has not replied
-✅ Lead is not marked closed
-✅ Follow-up step hasn’t already been executed
-
+<br>
+Emails are only sent if:<br>
+<br>
+✅ Lead has not replied<br>
+✅ Lead is not marked closed<br>
+✅ Follow-up step hasn’t already been executed<br>
+<br>
 ### ✅ Workflow 5 — High-Priority Alerts
-
-When:
+<br>
+When:<br>
 ```json
 "priority": "HIGH"
 ```
-
-The system instantly:
-
-• Emails founder/sales team
-• Adds record to Hot Leads List
-• Locks lead to prevent duplicate alerts
-
+<br>
+The system instantly:<br>
+<br>
+• Emails founder/sales team<br>
+• Adds record to Hot Leads List<br>
+• Locks lead to prevent duplicate alerts<br>
+<br>
 ### ✅ Workflow 6 — Weekly Analytics Summary
-
-Every Monday:
-
-• Total weekly leads
-• Priority breakdowns
-• Auto-reply & follow-up metrics
-• Hot-lead alert counts
-
-All statistics are emailed as a business performance report.
-
+<br>
+Every Monday:<br>
+<br>
+• Total weekly leads<br>
+• Priority breakdowns<br>
+• Auto-reply & follow-up metrics<br>
+• Hot-lead alert counts<br>
+<br>
+All statistics are emailed as a business performance report.<br>
+<br>
 ## 🛠️ Key Engineering Capabilities Demonstrated
-
-✅ End-to-end workflow automation at production scale
-✅ OAuth 2.0 API integrations (Google Sheets / Gmail)
-✅ Prompt engineering & LLM output parsing
-✅ Hybrid AI + deterministic decision systems
-✅ Scheduled task orchestration
-✅ Data normalization & merging pipelines
-✅ Alerting systems & reporting loops
-✅ Docker-based self-hosting
-
+<br>
+✅ End-to-end workflow automation at production scale<br>
+✅ OAuth 2.0 API integrations (Google Sheets / Gmail)<br>
+✅ Prompt engineering & LLM output parsing<br>
+✅ Hybrid AI + deterministic decision systems<br>
+✅ Scheduled task orchestration<br>
+✅ Data normalization & merging pipelines<br>
+✅ Alerting systems & reporting loops<br>
+✅ Docker-based self-hosting<br>
+<br>
 ## 🎯 Business Value Delivered
-
-This system replaces hours of weekly sales manual work by:
-
-✔ Automating lead qualification
-✔ Improving response speed
-✔ Preventing opportunity loss
-✔ Maintaining clean CRM records
-✔ Ensuring hot-lead visibility
-
-Perfect for:
-
-• Marketing agencies
-• SaaS sales teams
-• Consultants
-• Lead generation businesses
-
+<br>
+This system replaces hours of weekly sales manual work by:<br>
+<br>
+✔ Automating lead qualification<br>
+✔ Improving response speed<br>
+✔ Preventing opportunity loss<br>
+✔ Maintaining clean CRM records<br>
+✔ Ensuring hot-lead visibility<br>
+<br>
+Perfect for:<br>
+<br>
+• Marketing agencies<br>
+• SaaS sales teams<br>
+• Consultants<br>
+• Lead generation businesses<br>
+<br>
 ## 👨‍💻 Author
-Varun Wagle
-AI Automation Developer | Workflow Engineer | LLM Integrator
+Varun Wagle<br>
+AI Automation Developer | Workflow Engineer | LLM Integrator<br>
 
 ## 💬 Contact
-Reach out on [LinkedIn]([https://](https://www.linkedin.com/in/varunwagle/) for collaborations or freelance AI automation projects.
+Reach out on [LinkedIn](https://www.linkedin.com/in/varunwagle/) for collaborations or freelance AI automation projects.
