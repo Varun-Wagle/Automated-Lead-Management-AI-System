@@ -111,33 +111,33 @@ Emails are only sent if:<br>
 ✅ Lead has not replied<br>
 ✅ Lead is not marked closed<br>
 ✅ Follow-up step hasn’t already been executed<br>
-<br>
+
 ### ✅ Workflow 5 — High-Priority Alerts
-<br>
-When:<br>
+
+When:
 ```json
 "priority": "HIGH"
 ```
-<br>
+
 The system instantly:<br>
 <br>
 • Emails founder/sales team<br>
 • Adds record to Hot Leads List<br>
 • Locks lead to prevent duplicate alerts<br>
-<br>
+
 ### ✅ Workflow 6 — Weekly Analytics Summary
-<br>
+
 Every Monday:<br>
-<br>
+
 • Total weekly leads<br>
 • Priority breakdowns<br>
 • Auto-reply & follow-up metrics<br>
 • Hot-lead alert counts<br>
 <br>
 All statistics are emailed as a business performance report.<br>
-<br>
+
 ## 🛠️ Key Engineering Capabilities Demonstrated
-<br>
+
 ✅ End-to-end workflow automation at production scale<br>
 ✅ OAuth 2.0 API integrations (Google Sheets / Gmail)<br>
 ✅ Prompt engineering & LLM output parsing<br>
@@ -146,24 +146,24 @@ All statistics are emailed as a business performance report.<br>
 ✅ Data normalization & merging pipelines<br>
 ✅ Alerting systems & reporting loops<br>
 ✅ Docker-based self-hosting<br>
-<br>
+
 ## 🎯 Business Value Delivered
-<br>
+
 This system replaces hours of weekly sales manual work by:<br>
-<br>
+
 ✔ Automating lead qualification<br>
 ✔ Improving response speed<br>
 ✔ Preventing opportunity loss<br>
 ✔ Maintaining clean CRM records<br>
 ✔ Ensuring hot-lead visibility<br>
-<br>
+
 Perfect for:<br>
-<br>
+
 • Marketing agencies<br>
 • SaaS sales teams<br>
 • Consultants<br>
 • Lead generation businesses<br>
-<br>
+
 ## 👨‍💻 Author
 Varun Wagle<br>
 AI Automation Developer | Workflow Engineer | LLM Integrator<br>
