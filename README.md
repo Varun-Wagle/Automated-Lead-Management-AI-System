@@ -1,91 +1,172 @@
-# 🚀 Automated Lead Management & AI Follow-Up System
-This project demonstrates a full real-world AI-powered lead automation pipeline built using n8n (self-hosted), Groq LLM, Google Sheets, and Gmail API.
+# 🚀 Automated Lead Management & AI Follow-Up System (n8n + Groq)
 
-The system handles:
-• Lead intake via Webhook API
-• Rule-based + AI lead scoring
-• Automated personalized email replies
-• Priority-based follow-ups
-• High-priority alerts for founders/sales teams
-• Weekly analytics summary reports
+A **production-grade AI automation system** designed to capture, score, and nurture leads using fully-orchestrated workflows built in **n8n** with **Groq LLM integration**.
 
-## 🔧 Tech Stack
-| Tool                  | Purpose                                             |
-| --------------------- | --------------------------------------------------- |
-| **n8n**               | Workflow automation platform (Docker local install) |
-| **Groq (LLama 3.3)**  | AI lead scoring + message generation                |
-| **Google Sheets API** | Lead database + tracking                            |
-| **Gmail OAuth**       | Email dispatch for replies & alerts                 |
-| **Postman**           | API testing                                         |
-| **JavaScript**        | Decision logic & workflow scripting                 |
+This project demonstrates end-to-end real-world automation engineering including:
 
-## 🧩 Workflow Overview
-### ✅ Workflow 1 — Lead Capture API
-• Accepts incoming leads via Webhook POST API<br>
-• Validates payload<br>
-• Stores clean data into Leads Sheet<br>
+✅ API-based lead intake  
+✅ Rule-based + LLM lead scoring  
+✅ AI-generated email replies  
+✅ Multi-stage follow-up automation  
+✅ High-priority lead alerts  
+✅ Scheduled performance reporting
 
-### ✅ Workflow 2 — Lead Scoring (AI + Rules)
-• Applies scoring rules:<br>
-  - Budget tier<br>
-  - Source reliability<br>
-  - Service intent<br>
-  - Message seriousness<br>
-• Sends structured prompt to Groq<br>
-• Combines rule score + AI score<br>
-• Calculates:<br>
-  - leadScore (0-100)<br>
-  - priority (HIGH/MEDIUM/LOW)<br>
-  - follow-up schedule<br>
-• Updates database<br>
+---
 
-### ✅ Workflow 3 — Instant Auto-Reply
-• Generates personalized response email (AI or template)<br>
-• Sends immediately via Gmail<br>
-• Logs message history<br>
+## ⚙️ Technology Stack
 
-### ✅ Workflow 4 — Follow-Up Scheduler
-• Automated outreach:<br>
-  • 1-day follow-up<br>
-  • 3-day follow-up<br>
-  • 7-day follow-up<br>
-  • Skips if:<br>
-    - Lead replied<br>
-    - Lead closed<br>
-    - Follow-up already sent<br>
-    
-### ✅ Workflow 5 — High Priority Alerts
-• Triggers for leads marked HIGH priority<br>
-• Sends alert email to founder/sales team<br>
-• Adds record to “Hot Leads” sheet<br>
-• Marks alerts as completed to prevent duplicates<br>
+| Layer | Tools |
+|------|-------|
+| **Automation Engine** | n8n (Self-Hosted via Docker) |
+| **LLM Scoring & Content** | Groq API (LLaMA-3.3-70B) |
+| **Datastore / CRM** | Google Sheets API |
+| **Email Delivery** | Gmail API (OAuth 2.0) |
+| **Workflow Logic** | JavaScript |
+| **Testing** | Postman |
 
-### ✅ Workflow 6 — Weekly AI Summary Report
-• Every Monday:<br>
-  - Weekly new lead count<br>
-  - HIGH/MEDIUM/LOW breakdown<br>
-  - Follow-up statistics<br>
-  - Auto-reply stats<br>
-• Report delivered via email to sales/admin teams.<br>
+---
 
-## 📊 System Architecture
+---
+
+## 🧠 System Architecture
+
 ![System Architecture](./diagram/system-architecture.png)
 
-## 🎯 Project Goals
-✅ Build job-ready automation skills<br>
-✅ Implement real-world AI workflows<br>
-✅ Integrate OAuth APIs<br>
-✅ Practice model orchestration logic<br>
-✅ Create professional portfolio artifacts<br>
+---
 
-## ✅ Outcome
-✔ Fully automated AI lead processing system<br>
-✔ Handles hundreds of leads without manual work<br>
-✔ Demonstrates end-to-end system design ability<br>
+---
+
+## 🔁 Workflow Breakdown
+
+---
+
+### ✅ Workflow 1 — Lead Capture API
+
+Webhook API captures new inbound leads from:
+
+• Website forms  
+• CRMs / integrations  
+• Direct API clients (Postman)
+
+Validation & normalization occurs before storing into the **Google Sheets lead database**.
+
+---
+
+---
+
+### ✅ Workflow 2 — Lead Scoring (Hybrid AI + Rules Engine)
+
+Each lead is processed using both:
+
+#### Rule-Based Scoring
+Evaluates:
+- Budget size
+- Service intent
+- Lead source reliability
+- Message clarity & length
+
+Produces a **Rule Score (0–60)**.
+
+#### AI Scoring (Groq LLM)
+
+The full lead profile is sent to Groq’s LLaMA-3.3 model to generate:
+
+- **AI Score (0-100)**  
+- Short quality reasoning
+
+---
+
+#### Combined Lead Intelligence Output
+
+```json
+{
+  "leadScore": 0–100,
+  "aiScore": 0–100,
+  "priority": "HIGH | MEDIUM | LOW",
+  "nextFollowUpAt": "ISO Timestamp",
+  "scoredAt": "ISO Timestamp"
+}
+```
+
+### ✅ Workflow 3 — Instant Auto-Reply
+
+Immediately after scoring:
+
+• Personalized email reply is generated
+• Gmail API dispatches to the prospect
+• Subject + content logged inside the CRM
+
+### ✅ Workflow 4 — Follow-Up Automation
+
+Scheduled campaigns trigger:
+
+| Stage |	Timing |
+|-------|-------|
+| Follow-Up 1 |	+1 Day |
+| Follow-Up 2 |	+3 Days |
+| Follow-Up 3 |	+7 Days |
+
+Emails are only sent if:
+
+✅ Lead has not replied
+✅ Lead is not marked closed
+✅ Follow-up step hasn’t already been executed
+
+### ✅ Workflow 5 — High-Priority Alerts
+
+When:
+```json
+"priority": "HIGH"
+```
+
+The system instantly:
+
+• Emails founder/sales team
+• Adds record to Hot Leads List
+• Locks lead to prevent duplicate alerts
+
+### ✅ Workflow 6 — Weekly Analytics Summary
+
+Every Monday:
+
+• Total weekly leads
+• Priority breakdowns
+• Auto-reply & follow-up metrics
+• Hot-lead alert counts
+
+All statistics are emailed as a business performance report.
+
+## 🛠️ Key Engineering Capabilities Demonstrated
+
+✅ End-to-end workflow automation at production scale
+✅ OAuth 2.0 API integrations (Google Sheets / Gmail)
+✅ Prompt engineering & LLM output parsing
+✅ Hybrid AI + deterministic decision systems
+✅ Scheduled task orchestration
+✅ Data normalization & merging pipelines
+✅ Alerting systems & reporting loops
+✅ Docker-based self-hosting
+
+## 🎯 Business Value Delivered
+
+This system replaces hours of weekly sales manual work by:
+
+✔ Automating lead qualification
+✔ Improving response speed
+✔ Preventing opportunity loss
+✔ Maintaining clean CRM records
+✔ Ensuring hot-lead visibility
+
+Perfect for:
+
+• Marketing agencies
+• SaaS sales teams
+• Consultants
+• Lead generation businesses
 
 ## 👨‍💻 Author
-Varun Wagle<br>
-AI Automation Developer | n8n Specialist | Prompt Engineer
+Varun Wagle
+AI Automation Developer | Workflow Engineer | LLM Integrator
 
-## 📬 Contact
-[LinkedIn](https://www.linkedin.com/in/varunwagle/) | [Instagram](https://www.instagram.com/varun.wagle/) | [WhatsApp](https://wa.me/9156095415)
+## 💬 Contact
+Reach out on [LinkedIn]([https://](https://www.linkedin.com/in/varunwagle/) for collaborations or freelance AI automation projects.
